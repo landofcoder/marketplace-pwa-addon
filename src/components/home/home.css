@@ -1,0 +1,32 @@
+.mainCtn {
+    padding: 15px;
+}
+.mainCtn h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.formRoot {
+    display: flex;
+    margin-top: 25px;
+}
+.formListing {
+    width: 70%;
+}
+.formSidebar {
+    width: 30%;
+    min-width: 220px;
+    padding-inline-start: 25px;
+}
+
+@media (max-width: 1023px) {
+    .formRoot {
+        flex-wrap: wrap;
+    }
+    .formListing {
+        width: 100%;
+    }
+    .formSidebar {
+        width: 100%;
+    }
+}
