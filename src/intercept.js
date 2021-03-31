@@ -34,6 +34,11 @@ module.exports = targets => {
       path: require.resolve('./components/home/index.js')
     });
     routes.push({
+      name: 'SellerRegistation',
+      pattern: '/supplier/account.html',
+      path: require.resolve('./components/registation/index.js')
+    });
+    routes.push({
       name: 'ShopAll',
       pattern: '/shops.html',
       path: require.resolve('./components/shopAll/index.js')
@@ -73,6 +78,50 @@ module.exports = targets => {
       pattern: '/shop/report-spam/:shopUrl?',
       path: require.resolve('./components/shopReport/index.js')
     });
+
+    routes.push({
+      name: 'SellerDashboard',
+      pattern: '/seller/dashboard.html',
+      path: require.resolve('./components/sellerDashboard/index.js')
+    });
+
+    routes.push({
+      name: 'SellerProducts',
+      pattern: '/seller/products.html',
+      path: require.resolve('./components/sellerProducts/index.js')
+    });
+
+    routes.push({
+      name: 'SellerOrders',
+      pattern: '/seller/orders.html',
+      path: require.resolve('./components/sellerOrders/index.js')
+    });
+
+    routes.push({
+      name: 'SellerInvoices',
+      pattern: '/seller/invoices.html',
+      path: require.resolve('./components/sellerInvoices/index.js')
+    });
+
+    routes.push({
+      name: 'SellerShipments',
+      pattern: '/seller/shipments.html',
+      path: require.resolve('./components/sellerShipments/index.js')
+    });
+
+    routes.push({
+      name: 'SellerMemos',
+      pattern: '/seller/memos.html',
+      path: require.resolve('./components/sellerMemos/index.js')
+    });
+
+    routes.push({
+      name: 'SellerProfile',
+      pattern: '/seller/profile.html',
+      path: require.resolve('./components/sellerProfile/index.js')
+    });
+
+
     return routes;
   });
 };
