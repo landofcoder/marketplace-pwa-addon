@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { GET_FORM_BY_IDENTIFIER } from './Formbuilder.gql'
+import { GET_FORM_BY_IDENTIFIER } from './queries/Marketplace.gql'
 import { useQuery } from '@apollo/client';
 
 export const useForm = props => {
